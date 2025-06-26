@@ -18,8 +18,8 @@ function onPageLoad() {
         { left: "Salut", right: "Cześć", id: 3 },
         { left: "Au revoir", right: "Do widzenia", id: 4 },
         { left: "Enchanté", right: "Miło mi", id: 5 },
-        { left: "Ça va?", right: "Jak się masz? (Wszystko w porządku?)", id: 6 },
-        { left: "Ça va", right: "Wszystko w porządku (Mam się dobrze)", id: 7 }
+        { left: "Ça va?", right: "Jak się masz?", id: 6 },
+        { left: "Ça va", right: "Mam się dobrze", id: 7 }
     ];;
     
     // Initialize state
@@ -124,7 +124,7 @@ function addMatchingStyles() {
         
         .column {
             flex: 1;
-            max-width: 300px;
+            max-width: 350px;
             z-index: 2;
         }
         
@@ -132,7 +132,8 @@ function addMatchingStyles() {
             text-align: center;
             margin-bottom: 20px;
             color:rgb(7, 7, 7);
-            font-size: 20px;
+            font-size: 24px;
+            font-family: 'Brush Script MT';
         }
         
         .match-item {
@@ -144,7 +145,9 @@ function addMatchingStyles() {
             cursor: pointer;
             transition: all 0.3s ease;
             position: relative;
-            font-size: 16px;
+            font-size: 20px;
+            font-family: Garamond, serif;
+            font-weight: bold;
             text-align: center;
         }
         
