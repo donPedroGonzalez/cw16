@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="dist\resp_turquoise.css">
+    <title>Exercices de français</title>
+</head>
+<body>    
+    <div class="wrapper">
+        <div class="header" id="logo"><img src="logo1.png" width="35px"></div>
+        <div class="header" id="title">Exercices de français</div>
+        <!-- <div class="header" id="user">Votre compte</div> -->
+        <div class="header" id="user"></div>
+        <div class="side-main" id="exercices-nav"><nav id="navigation"></nav></div>
+        
+        <!-- <div class="side-main" id="stats">Voici vos statistiques.</div> -->
+        <div class="side-main" id="stats"></div>
+        <div id="main-window-title">
+            <div id="buttons-left-panel" class="buttons-panel">                
+                <div><button id="button" type="button" style="font-size: large;" disabled="true">Sprawdź</button></div>
+                <div><button id="reloadPage" type="button" style="font-size: large;">Wyczyść odpowiedzi</button></div>
+            </div>
+            <div><p id="premiere-consigne">Le titre de cet exercice.</p><p id="deuxieme-consigne">Et la consigne</p></div>               
+
+            <div id="buttons-right-panel" class="buttons-panel">  
+                <div><button id="reset-keyboard" type="button" style="font-size: large;">Wyłącz klawiaturę</button></div>                
+                <div><button id="activate-keyboard" type="button" style="font-size: large;" disabled="true">Włącz klawiaturę</button></div>
+            </div>
+            <div id="keyboard" class="hidden">
+                <div>
+                    <input type="button" value="é">
+                    <input type="button" value="à">
+                    <input type="button" value="ç">
+                    <input type="button" value="è">
+                    <input type="button" value="é">
+                    <input type="button" value="ê">
+                    <input type="button" value="ë">
+                    <input type="button" value="î">
+                </div>
+                <div>
+                    <input type="button" value="ï">
+                    <input type="button" value="ô">
+                    <input type="button" value="û">
+                    <input type="button" value="ü">
+                    <input type="button" value="ù">
+                    <input type="button" value="À">
+                    <input type="button" value="É">
+                    <input type="button" value="Ô">
+                </div>        
+            </div>
+        </div>
+        <div id="main-window-body">           
+            <div id="exercice-wrapper">
+            </div>
+            <br><div id="result-wrapper"></div>
+        </div>                
+        <div class="footer" id="o-mnie-footer"><a href="https://donpedrogonzalez.github.io/frenchTeacherSite/" style="color: white;">o mnie…</a></div>
+        <div class="footer" id="myFooter">Ćwiczenia językowe DP-LING Piotr Dąbrowski</div>
+        <div class="footer" id="footer-cat-info"></div>
+    </div>
+    <script src="matching-exercise.js"></script>
+    <script src="../navigation.js"></script>
+</body>
+</html>

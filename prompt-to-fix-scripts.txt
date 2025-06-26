@@ -1,0 +1,23 @@
+Now that I look at the csv file structure you propose I can see there is one thing you have missed from my examples (but you didn't have those examples before). 
+
+If you analyze my js scripts you can see that parts like this 
+
+    document.getElementById("premiere-consigne").innerText = "Exercice de correspondance";
+
+    document.getElementById("deuxieme-consigne").innerText = "Cliquez sur un élément de chaque colonne pour les associer";
+
+    document.getElementById("footer-cat-info").innerText = "Vocabulaire français-polonais";
+
+are not hard-coded, but also taken from the first row of the csv.
+
+so the csv structure is as follows - row 0: header; row 1: information to fill in premiere-consigne, deuxieme-consigne and footer-cat-info elements;
+
+rows 2 and following: examples to be used in the exercice.
+
+This helps me to build all the elements of the webpage based on the csv file.
+
+Can you please change the matching-exercice.js script and word-order.js script so that they take this into account?
+
+For matching-exercice.js you assumed the csv will only have two columns. Please adapt the script to handle csv with three columns, but all the three columns will only be used in the second row (row 1), in subsequent rows the third column simply will not be used.
+This problem does not occur in case of word-order.js, because three columns are needed there anyways.
+
